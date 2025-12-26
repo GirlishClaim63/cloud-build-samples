@@ -17,3 +17,8 @@ steps:
   - name: golang
     args: ['go', 'run', 'quickstart-automate/main.go']
 # [END cloudbuild_quickstart_automate]
+
+# ここから追加
+options:
+  logging: CLOUD_LOGGING_ONLY
+serviceAccount: 'projects/git-test01/serviceAccounts/633453842512-compute@developer.gserviceaccount.com'
